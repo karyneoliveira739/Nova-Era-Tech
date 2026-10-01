@@ -1,0 +1,323 @@
+@charset "UTF-8";
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    background-image: linear-gradient(180deg, lightblue, white);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 10px;
+    width: 100%;
+}
+
+header > h1 {
+    color: blue;
+    text-shadow: 1px 1px 2px black;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px black;
+}
+
+main h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.produto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border: 1px solid black;
+    padding: 15px;
+    margin: 0;
+    border-radius: 8px;
+    width: 240px;
+    text-align: center;
+    box-shadow: 0 2px 5px black;
+}
+
+a:has(img), .produto a {
+    border-bottom: none;
+    text-decoration: none;
+}
+
+a img, .produto img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    display: block;
+    margin: 10px auto;
+    border-radius: 4px;
+    border: none;
+    border-bottom: none;
+    outline: none;
+}
+
+.produto p {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 1.4em;
+}
+
+section, article {
+    max-width: 700px;
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body > img {
+    display: block;
+    margin: 15px auto;
+    max-width: 180px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px black;
+    border: none;
+    border-bottom: none;
+}
+
+body p {
+    text-align: center;
+    line-height: 1.5em;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body ul {
+    display: inline-block;
+    text-align: left;
+    margin: 10px auto;
+}
+
+h2, h3, h4 {
+    color: blue;
+    margin: 10px 0;
+}
+
+footer {
+    display: block;
+    width: 100vw;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    padding: 5px;
+}
+
+a {
+    color: blue;
+    background-color: white;
+    padding: 0 3px;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: .5px dotted blue;
+}
+
+a:hover {
+    color: black;
+    border-bottom: 1px solid blue;
+}
+
+.botao, .botao-comprar {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.botao:hover {
+    background-color: blue;
+}
+
+.botao-comprar {
+    background-color: green;
+}
+
+.botao-comprar:hover {
+    background-color: green;
+}
+
+a[href="compra.php"], a[href="compra.html"] {
+    display: inline-block;
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 15px auto;
+    border-bottom: none;
+}
+
+a[href="compra.php"]:hover, a[href="compra.html"]:hover {
+    background-color: green;
+    color: white;
+    border-bottom: none;
+}
+
+.voltar {
+    margin-top: 15px;
+}
+
+.voltar .botao {
+    background-color: red;
+}
+
+.voltar .botao:hover {
+    background-color: red;
+}
+
+table {
+    min-width: 400px;
+    border-spacing: 0px;
+    border: 0.5px solid red;
+    margin: 10px auto;
+}
+
+table th {
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    text-align: left;
+}
+
+table td {
+    padding: 5px;
+}
+
+table tr {
+    background-color: black;
+}
+
+table tr:nth-child(odd) {
+    background-color: darkgray;
+}
+
+ul > li::marker {
+    color: blue;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid white;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    width: fit-content;
+    font-size: 0.8em;
+    font-weight: 100;
+    background-color: black;
+    padding: 3px 7px;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    border-radius: 5px;
+}
+
+input[type=text], [type=number], select, input[type=date], input[type=datetime], input[type=email], input[type=month], input[type=password], input[type=range], input[type=tel], input[type=time], input[type=week], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1em;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+ 
+input[type=submit], button {
+    width: 100%;
+    background-color: green;
+    font-size: 1em;
+    color: white;
+    padding: 12px 25px;
+    margin: 15px 0 5px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ 
+input[type=submit]:hover, button:hover {
+    background-color: green;
+}
+
+fieldset {
+    margin: 15px 0;
+    padding: 15px;
+    border: 0.5px dotted lightblue;
+}
+
+fieldset > legend {
+    font-size: 0.8em;
+    font-weight: 100;
+    background-color: black;
+    padding: 3px 7px;
+    border-radius: 5px;
+}
+
+.botao-voltar {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+}
+
+.botao-voltar:hover {
+    background-color: darkred;
+}
